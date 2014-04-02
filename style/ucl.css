@@ -1,5 +1,14 @@
 @CHARSET "ISO-8859-1";
 
+body {
+	background-color: #d9d9d1;
+}
+
+#page {
+	background-color: white;
+	padding-top: 10px;	
+}
+
 /* Clearfix -------------------------------- */
 /* More info: http://nicolasgallagher.com/micro-clearfix-hack/
 
@@ -15,25 +24,43 @@ For modern browsers */
 /* For IE 6/7 (trigger hasLayout) */
 .clearfix {
   zoom: 1; }
-  
-  /* Footer
+
+.container-fluid {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/* Footer
 -------------------------------------------------------------- */
 footer {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
   background: rgba(0, 0, 0, 0.7);
+  background: rgba(0,0,0,.7);
   padding: 40px 35px;
   color: #bbb;
   clear: left; }
-  footer h2 {
-    margin-bottom: 0.5em;
-    font-size: 1em; }
   footer a {
-    color: #eee;
+    color: #f6be00;
     text-decoration: none; }
   footer a:hover {
-    color: #fff; }
+    color: #f6be00;
+	text-decoration: underline; }
+  footer a:visited {
+    color: #f6be00;
+	text-decoration: none; }
   footer article {
     margin-bottom: 1em; }
+    footer article h2 {
+      font-size: 16px !important;
+      font-weight: bold !important;
+      font-family: 'Helvetica Neue', Arial, sans-serif !important;
+	  line-height: 1.5;
+      margin-bottom: 0.5em;
+      font-size: 1em; 
+	  color: #fff;}
     footer article ul {
+      padding: 0;
+      margin-left: 0;
       list-style-type: none;
       margin-bottom: 1em; }
       footer article ul li {
@@ -45,7 +72,13 @@ footer {
         content: none; }
   footer hr {
     border-color: #ccc;
-    clear: both; }
+    clear: both; 
+    display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;}
 
 @media only screen and (max-width: 767px) {
   footer {
