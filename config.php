@@ -26,7 +26,7 @@ $THEME->parents = array('essential');
 $THEME->parent_sheets = false;
 
 // Our sheets.
-$THEME->sheets = array('moodle', 'slides', 'categories', 'font-awesome.min', 'essential', 'alternative1', 'alternative2', 'alternative3', 'settings');
+$THEME->sheets = array('moodle', 'slides', 'categories', 'font-awesome.min', 'essential', 'alternative1', 'alternative2', 'alternative3', 'settings', 'ucl');
 
 $THEME->supportscssoptimisation = false;
 

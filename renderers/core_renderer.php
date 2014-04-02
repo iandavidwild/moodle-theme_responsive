@@ -34,8 +34,6 @@ class theme_ucl_core_renderer extends theme_essential_core_renderer {
         global $CFG, $DB, $USER;
 
         $output = $this->container_end_all(true);
-        
-        $output = '<p>Boo!</p>';
 
         $footer = $this->opencontainers->pop('header/footer');
 
