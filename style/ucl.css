@@ -1,0 +1,131 @@
+@CHARSET "ISO-8859-1";
+
+/* Clearfix -------------------------------- */
+/* More info: http://nicolasgallagher.com/micro-clearfix-hack/
+
+For modern browsers */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+/* For IE 6/7 (trigger hasLayout) */
+.clearfix {
+  zoom: 1; }
+  
+  /* Footer
+-------------------------------------------------------------- */
+footer {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 40px 35px;
+  color: #bbb;
+  clear: left; }
+  footer h2 {
+    margin-bottom: 0.5em;
+    font-size: 1em; }
+  footer a {
+    color: #eee;
+    text-decoration: none; }
+  footer a:hover {
+    color: #fff; }
+  footer article {
+    margin-bottom: 1em; }
+    footer article ul {
+      list-style-type: none;
+      margin-bottom: 1em; }
+      footer article ul li {
+        padding-bottom: 4px;
+        padding-top: 4px;
+        font-size: 14px;
+        margin-bottom: 0; }
+      footer article ul li:before {
+        content: none; }
+  footer hr {
+    border-color: #ccc;
+    clear: both; }
+
+@media only screen and (max-width: 767px) {
+  footer {
+    padding-left: 5%;
+    padding-right: 5%; } }
+#footer-links {
+  font-size: 14px;
+  margin-top: 0.5em; }
+
+@media screen and (max-width: 989px) {
+  footer article li {
+    padding-bottom: 2px;
+    padding-top: 2px;
+    font-size: 12px;
+    margin-left: 0; }
+
+  #footer-links {
+    font-size: 12px; } }
+.block-myucl {
+  display: block;
+  float: left;
+  margin-left: 0%;
+  margin-right: -100%;
+  width: 31.30645%; }
+
+@media only screen and (max-width: 989px) {
+  .block-myucl {
+    display: block;
+    float: left;
+    margin-left: 0%;
+    margin-right: -100%;
+    width: 31.59722%; } }
+@media only screen and (max-width: 767px) {
+  .block-myucl {
+    display: block;
+    float: left;
+    margin-left: 0%;
+    margin-right: -100%;
+    width: 46.79688%; } }
+.block-finditfast1 {
+  display: block;
+  float: left;
+  margin-left: 34.33675%;
+  margin-right: -100%;
+  width: 31.28827%; }
+
+@media only screen and (max-width: 989px) {
+  .block-finditfast1 {
+    display: block;
+    float: left;
+    margin-left: 34.20139%;
+    margin-right: -100%;
+    width: 31.59722%; } }
+@media only screen and (max-width: 767px) {
+  .block-finditfast1 {
+    display: block;
+    float: left;
+    margin-left: 53.04688%;
+    margin-right: -100%;
+    width: 46.79688%; } }
+.block-finditfast2 {
+  display: block;
+  float: left;
+  margin-left: 68.65532%;
+  margin-right: -100%;
+  width: 31.27734%; }
+
+@media only screen and (max-width: 989px) {
+  .block-finditfast2 {
+    display: block;
+    float: left;
+    margin-left: 68.40278%;
+    margin-right: -100%;
+    width: 31.59722%; } }
+@media only screen and (max-width: 767px) {
+  .block-finditfast2 {
+    display: block;
+    float: left;
+    margin-left: 0%;
+    margin-right: -100%;
+    width: 46.79688%;
+    clear: left; } }
+  
