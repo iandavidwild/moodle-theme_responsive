@@ -898,6 +898,60 @@ defined('MOODLE_INTERNAL') || die;
     $setting->set_updatedcallback('theme_reset_all_caches');
     $temp->add($setting);
     
+    //This is the descriptor for Marketing Spot Four
+    $name = 'theme_ucl/marketing4info';
+    $heading = get_string('marketing4', 'theme_ucl');
+    $information = get_string('marketinginfodesc', 'theme_ucl');
+    $setting = new admin_setting_heading($name, $heading, $information);
+    $temp->add($setting);
+    
+    //Marketing Spot Four.
+	$name = 'theme_ucl/marketing4';
+    $title = get_string('marketingtitle', 'theme_ucl');
+    $description = get_string('marketingtitledesc', 'theme_ucl');
+    $default = '';
+    $setting = new admin_setting_configtext($name, $title, $description, $default);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $temp->add($setting);
+    
+    $name = 'theme_ucl/marketing4icon';
+    $title = get_string('marketingicon', 'theme_ucl');
+    $description = get_string('marketingicondesc', 'theme_ucl');
+    $default = 'star';
+    $setting = new admin_setting_configtext($name, $title, $description, $default);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $temp->add($setting);
+    
+    $name = 'theme_ucl/marketing4image';
+    $title = get_string('marketingimage', 'theme_ucl');
+    $description = get_string('marketingimagedesc', 'theme_ucl');
+    $setting = new admin_setting_configstoredfile($name, $title, $description, 'marketing4image');
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $temp->add($setting);
+    
+    $name = 'theme_ucl/marketing4content';
+    $title = get_string('marketingcontent', 'theme_ucl');
+    $description = get_string('marketingcontentdesc', 'theme_ucl');
+    $default = '';
+    $setting = new admin_setting_confightmleditor($name, $title, $description, $default);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $temp->add($setting);
+    
+    $name = 'theme_ucl/marketing4buttontext';
+    $title = get_string('marketingbuttontext', 'theme_ucl');
+    $description = get_string('marketingbuttontextdesc', 'theme_ucl');
+    $default = '';
+    $setting = new admin_setting_configtext($name, $title, $description, $default);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $temp->add($setting);
+    
+    $name = 'theme_ucl/marketing4buttonurl';
+    $title = get_string('marketingbuttonurl', 'theme_ucl');
+    $description = get_string('marketingbuttonurldesc', 'theme_ucl');
+    $default = '';
+    $setting = new admin_setting_configtext($name, $title, $description, '', PARAM_URL);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $temp->add($setting);
     
     $ADMIN->add('theme_ucl', $temp);
 
