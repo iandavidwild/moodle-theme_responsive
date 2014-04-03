@@ -80,6 +80,34 @@ footer {
 	margin: 1em 0;
 	padding: 0;}
 
+
+/* Marketing spots
+-------------------------------------------------------------- */
+.marketing {
+	padding: 0 10px 0 10px;
+}
+
+.service {
+    background:#fff;
+    padding:3px 10px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom:10px;
+    border-left: 1px solid #ddd;
+}
+
+.service h5{
+    padding:3px 0px 8px 0px;
+    margin:3px 0px 4px 0px;
+    border-bottom:1px solid #f1f1f1;
+}
+
+.service i{
+    font-size:1.2em;
+    margin-top:3px;
+    margin-right:8px;
+}
+
 @media only screen and (max-width: 767px) {
   footer {
     padding-left: 5%;
