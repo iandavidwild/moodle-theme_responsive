@@ -55,6 +55,7 @@ $alertsuccess = '<span class="fa-stack"><i class="fa fa-square fa-stack-2x"></i>
 $hasmarketing1image = (!empty($PAGE->theme->settings->marketing1image));
 $hasmarketing2image = (!empty($PAGE->theme->settings->marketing2image));
 $hasmarketing3image = (!empty($PAGE->theme->settings->marketing3image));
+$hasmarketing4image = (!empty($PAGE->theme->settings->marketing4image));
 
 $hasfrontpageblocks = (empty($PAGE->theme->settings->frontpageblocks)) ? false : $PAGE->theme->settings->frontpageblocks;
 
@@ -251,6 +252,8 @@ echo $OUTPUT->doctype() ?>
 	} else if($PAGE->theme->settings->togglemarketing==2 && !isloggedin()) {
 		require_once(dirname(__FILE__).'/includes/marketingspots.php');
 	} else if($PAGE->theme->settings->togglemarketing==3 && isloggedin()) {
+		require_once(dirname(__FILE__).'/includes/marketingspots.php');
+	} else if($PAGE->theme->settings->togglemarketing==4 && isloggedin()) {
 		require_once(dirname(__FILE__).'/includes/marketingspots.php');
 	} 
 ?>
